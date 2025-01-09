@@ -1,0 +1,24 @@
+<p>user works!</p>
+<h2>Student Table</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Sr</th>
+            <th>Name</th>
+            <th>email</th>
+            <th>username</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of userdata.value(); track $index) {
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td> 
+                <td>{{item.username}}</td>
+                <td>{{item.address.street}}</td>
+            </tr>
+        }
+    </tbody>
+</table>

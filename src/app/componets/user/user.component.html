@@ -1,0 +1,24 @@
+<p>user works!</p>
+<h2>Student Table</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Sr</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of studendts; track $index) {
+            <tr>
+                <td>{{item.sr}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.Subject}}</td>
+                <td>{{item.mark}}</td>
+                <td>{{item.address}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
